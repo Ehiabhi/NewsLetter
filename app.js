@@ -1,5 +1,5 @@
 //jshint esversion:6
-
+require("dotenv").config()
 const express = require("express");
 const request = require("request");
 const bodyParser = require("body-parser");
@@ -34,10 +34,10 @@ app.post("/", function(req, res){
   var jsonData = JSON.stringify(data);
 
   var options = {
-    url: "https://us4.api.mailchimp.com/3.0/lists/b1b24e10ba",
+    url: "https://us4.api.mailchimp.com/3.0/lists/process.env.LIST_ID",
     method: "POST",
     headers: {
-      "Authorization": "Ehis b44161bb83e03fca5b6e8475fa697107-us4"
+      "Authorization": "Ehis process.env.API_KEY"
     },
     body: jsonData
   };
@@ -58,10 +58,3 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, function(){
   console.log("Server Started At Port 3000");
 });
-
-//API key
-//b44161bb83e03fca5b6e8475fa697107-us4
-
-
-//List id
-//b1b24e10ba
