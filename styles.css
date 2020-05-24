@@ -1,0 +1,86 @@
+/* HTML AND BODY */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #b87c7c;
+}
+
+/* FORM */
+.mt-5,
+.sign-up {
+  font-family: "Montez", cursive;
+  font-size: 35px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 370px;
+  padding: 15px;
+  margin: auto;
+}
+
+input {
+  font-family: "Cormorant", serif;
+  letter-spacing: 1.5;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  color: rgb(0, 123, 255);
+  font-weight: bolder;
+}
+
+.form-signin .form-control:focus {
+  background-color: transparent;
+  z-index: 2;
+  color: #fff;
+  font-weight: bolder;
+  transition: 1s;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle {
+  border-radius: 0;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* FOOTER */
+nav {
+  width: 100%;
+}
+
+footer nav a {
+  color: #fff;
+}
+
+footer nav a:hover {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2;
+  transition: 1s;
+}
